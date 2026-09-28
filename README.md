@@ -1,2 +1,2 @@
-# detonation-sandbox
-Static + dynamic malware analysis pipeline with ML classification and automated YARA/Suricata rule generation.
+# eBPF threat detector
+A Kubernetes runtime security system that uses eBPF to monitor container activity and detect suspicious behavior using rule-based and ML-based analysis.
