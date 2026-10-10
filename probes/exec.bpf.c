@@ -10,8 +10,10 @@ SEC("tp/sched/sched_process_exec")
 int handle_tp(void *ctx)
 {
 	int pid = bpf_get_current_pid_tgid() >> 32;
-
-	bpf_printk("BPF triggered from PID %d.\n", pid);
+	char buf[16];
+	bpf_get_current_comm(&buf, sizeof(buf));
+	
+	bpf_printk("exec pid=%d comm=%s\n", pid, buf);
 
 	return 0;
 }
