@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "type": "exec",
+  "seq": 4182,
+  "ts_mono_ns": 17695223469000,
+  "ts_wall": "2026-10-11T10:44:09.223469Z",
+  "process": {
+    "pid": 56763,
+    "ppid": 3008,
+    "start_ns": 17695200000000,
+    "comm": "ls"
+  },
+  "container": {
+    "status": "ok",
+    "cgroup_id": 30785,
+    "container_id": "ff9aca7aa13778c262b8adfd2bd18115274d00a4b8a117da5a9439ac2860a9c7",
+    "pod": "ebpf-test",
+    "namespace": "default",
+    "image": "docker.io/library/alpine:latest"
+  },
+  "data": {
+    "filename": "/bin/ls",
+    "filename_truncated": false
+  }
+}
